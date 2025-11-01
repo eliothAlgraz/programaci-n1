@@ -1,0 +1,21 @@
+playlist_musica = ["bohemia rhapsody", "hotel california","stairway to haven"]
+print("la playlist del dia es:",playlist_musica)
+cancion_fav = input("escribe tu cancin favorita: ")
+playlist_musica.append(cancion_fav)
+print("despues de agregar tu cancion queda la lista:", playlist_musica)
+print("el dj quiere elilimar hotel california.")
+playlist_musica.pop(1)
+print("la playlist queda asi sin hotel california",playlist_musica)
+can1 = "shape of you"
+playlist_musica.insert(1,can1)
+print("el dj agrego la cancion shape of you y la playlist que:",playlist_musica)
+print("el dj agrego a la playlist watermelon sugar")
+valor = "watermelon sugar"
+playlist_musica.insert(0,valor)
+print(playlist_musica)
+print("la fiesta termino el dj elimino la ultima cancion de la playlist")
+playlist_musica.pop()
+print(playlist_musica)
+print("esta fue la cantidad de canciones que quedaron",len(playlist_musica))
+playlist_musica.extend(playlist_musica)
+print("esta fue la lista de canciones que se reproducieron en la fiesta\n",playlist_musica)
